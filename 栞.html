@@ -128,7 +128,7 @@ h2 .day-date{
 /* ---- stay cards ---- */
 .stays{display:grid;gap:.6rem;margin-top:.6rem}
 .stay{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.85rem .95rem}
-.stay .n{font-weight:700;font-size:1rem}
+.stay .n{font-weight:700;font-size:1rem;margin:0}
 .stay .when{
   font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.7rem;font-weight:600;
   letter-spacing:.1em;color:var(--ink-3);display:block;margin-bottom:.15rem
@@ -216,6 +216,7 @@ h2 .day-date{
 .sub-h:first-child{margin-top:0}
 
 /* ---- money ---- */
+.money .fine{color:var(--ink-3);font-size:.82rem}
 .money{width:100%;border-collapse:collapse;font-size:.88rem}
 .money th,.money td{text-align:left;padding:.5rem .5rem .5rem 0;border-bottom:1px solid var(--line);vertical-align:baseline}
 .money th{font-weight:600;font-size:.72rem;letter-spacing:.1em;color:var(--ink-3);font-family:'IBM Plex Mono',ui-monospace,monospace}
@@ -266,7 +267,7 @@ h2 .day-date{
   <div class="stays">
     <div class="stay">
       <span class="when">1泊目 &nbsp;9/13 SUN</span>
-      <p class="n" style="margin:0">ニッコースタイル名古屋</p>
+      <p class="n">ニッコースタイル名古屋</p>
       <p class="d">愛知県名古屋市中村区名駅五丁目2011番1<br>
       地下鉄桜通線 国際センター駅から徒歩4分<br>
       チェックイン 15:00 ／ チェックアウト 11:00</p>
@@ -277,10 +278,10 @@ h2 .day-date{
     </div>
     <div class="stay">
       <span class="when">2泊目 &nbsp;9/14 MON</span>
-      <p class="n" style="margin:0">鈴鹿サーキットホテル ウエスト</p>
+      <p class="n">鈴鹿サーキットホテル ウエスト</p>
       <p class="d">サーキットキッズルーム<br>
       三重県鈴鹿市稲生町7992<br>
-      近鉄 白子駅からタクシー約15分（バス約18分）</p>
+      近鉄 白子駅からタクシー約20分</p>
       <div class="btnrow">
         <a class="btn tel" href="tel:0593781111">059-378-1111</a>
         <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%88%B4%E9%B9%BF%E3%82%B5%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB" target="_blank" rel="noopener">地図を開く</a>
@@ -295,12 +296,8 @@ h2 .day-date{
   <hr class="rule">
   <div class="deadline">
     <p class="h">往路はミュースカイを使わない</p>
-    <p class="b">11:47発の特急・一般車で12:25着。ミュースカイより早くて安い</p>
-    <p class="s">空港から名鉄名古屋へは3つの選び方があります。<br>
-    ・<strong>特急 11:47発 → 12:25着</strong>／乗車券980円のみ・座席指定なし<br>
-    ・ミュースカイ 11:37発 → 12:06着／1,430円・着陸から27分で厳しい<br>
-    ・ミュースカイ 12:07発 → 12:36着／1,430円・特急より11分遅い<br>
-    <strong>中部国際空港は始発駅</strong>なので、一般車でも並べば座れます。着陸から37分の余裕があり、到着はミュースカイ12:07発より早く、特別車両券450円（年齢を問わず1人）が4人ぶん浮きます。荷物を受け取ったらホームへ行って列に並んでください。</p>
+    <p class="b">11:47発の特急・一般車で12:25着</p>
+    <p class="s">ミュースカイ12:07発（12:36着・1,430円）より早く着いて、乗車券980円だけで乗れます。<strong>中部国際空港は始発駅</strong>なので、荷物を受け取ってホームに並べば4人で座れます。着陸から37分あるので慌てずに。<strong>特別車の車両には入らないよう、号車の表示を確認してください。</strong></p>
   </div>
   <ul class="tl">
     <li>
@@ -327,14 +324,14 @@ h2 .day-date{
       <span class="time">11:47</span>
       <div class="body">
         <p class="what"><span class="chip move">いどう</span>特急（岐阜行）で名鉄名古屋へ（→12:25着）</p>
-        <p class="memo">一般車に乗る。特別車の車両には入らないよう号車表示を確認。始発なので、早めにホームに並べば4人で座れる。</p>
+        <p class="memo">一般車に乗る。乗車券980円だけで、切符を先に買う必要はない。</p>
       </div>
     </li>
     <li>
       <span class="time">12:30</span>
       <div class="body">
         <p class="what"><span class="chip move">いどう</span>タクシーでホテルへ（約5分）</p>
-        <p class="memo">ここは駅のタクシー乗り場に並ぶほうが速い。GOは配車待ちに加えてアプリ手配料100円がかかるので、この距離では割に合わない。GOを入れておくのは鈴鹿側で使うため。</p>
+        <p class="memo">駅のタクシー乗り場に並ぶほうが速い。GOは配車待ちに加えてアプリ手配料100円がかかるので、この距離では割に合わない。GOを入れておくのは鈴鹿側で使うため。</p>
       </div>
     </li>
     <li>
@@ -380,7 +377,7 @@ h2 .day-date{
       <span class="time">18:30</span>
       <div class="body">
         <p class="what"><span class="chip">ごはん</span>夕ごはん</p>
-        <p class="memo">疲れていたらモールのフードコートで済ませて早く寝る。翌朝は7:00の朝食開始と同時に動く。</p>
+        <p class="memo">寝る前に、翌朝の朝ごはんを買っておく。ホテルの朝食は7:00からで、8:50発に間に合わない。</p>
       </div>
     </li>
   </ul>
@@ -394,15 +391,14 @@ h2 .day-date{
   <div class="deadline">
     <p class="h">白子での乗り継ぎは10分</p>
     <p class="b">9:30に白子着 → 9:40発のバスへ</p>
-    <p class="s">バスは<strong>近鉄白子駅 西口の1番のりば</strong>。改札を出たらまっすぐ西口へ向かってください。<br>
-    <strong>この便を逃すと次は10:20発</strong>です。手前の9:25発は春休みと夏休みの期間だけの運行なので9/14は走りません。40分の差が出るので、白子に着いたら寄り道せずに乗り場へ。</p>
+    <p class="s">バスは<strong>近鉄白子駅 西口の1番のりば</strong>。改札を出たらまっすぐ西口へ向かってください。<strong>この便を逃すと次は10:20発</strong>です。40分の差が出るので、白子に着いたら寄り道せずに乗り場へ。</p>
   </div>
   <ul class="tl">
     <li class="key">
       <span class="time">06:30</span>
       <div class="body">
         <p class="what"><span class="chip">ごはん</span>朝ごはん（部屋で）</p>
-        <p class="memo">ホテルの朝食は付けていないので、前夜のうちに買っておく。style kitchen は7:00開店なので、待つと8:50発に間に合わない。</p>
+        <p class="memo">前夜に買っておいたもので済ませる。</p>
       </div>
     </li>
     <li>
@@ -429,7 +425,7 @@ h2 .day-date{
       <span class="time">09:40</span>
       <div class="body">
         <p class="what"><span class="chip move">いどう</span>三重交通バスで鈴鹿サーキットへ（→10:00着）</p>
-        <p class="memo">所要20分。大人500円・小児250円。F1開催日は運休することがあるが、9/14は該当しない。</p>
+        <p class="memo">所要20分。大人500円・小児250円。</p>
       </div>
     </li>
     <li>
@@ -465,7 +461,7 @@ h2 .day-date{
       <span class="time">18:00</span>
       <div class="body">
         <p class="what"><span class="chip">ごはん</span>夕ごはん</p>
-        <p class="memo">寝る前に、翌朝11:00のタクシーをフロントで頼んでおく。</p>
+        <p class="memo">寝る前に、翌朝11:00のタクシーをフロントで頼んでおく。これを忘れると帰りが崩れる。</p>
       </div>
     </li>
   </ul>
@@ -473,14 +469,13 @@ h2 .day-date{
 
 <section aria-labelledby="h-d3">
   <h2 id="h-d3"><span class="day-no">DAY 3</span>帰る日<span class="day-date">9/15 TUE</span></h2>
-  <p class="sec-note">10時チェックアウト。11:36のビスタカーに乗って、名古屋で乗り換えてセントレアへ。</p>
+  <p class="sec-note">10時チェックアウト。タクシーで白子へ出て、11:36のビスタカーと名古屋での乗り換えでセントレアへ。</p>
   <hr class="rule">
   <div class="deadline">
-    <p class="h">帰りのバスは無い。タクシーで出る</p>
-    <p class="b">11:00にタクシー → 11:20白子着 → 11:36発</p>
-    <p class="s">鈴鹿サーキット発のバスは、11時前後の便がどれも<strong>春休みと夏休みの期間だけの運行</strong>で、9/15は動きません。通年で走る便は昼すぎまで空くので、11:36の特急に間に合うバスがありません。<br>
-    白子駅までは約20分。<strong>前夜のうちにフロントで11:00に頼んでおいてください。</strong>GOも鈴鹿の対応エリアなので保険になります。<br>
-    バスの時刻は三重交通の2つのページで表示が食い違っていました。どうしてもバスで行きたい場合は、チェックイン時にフロントで当日の時刻を確認してください。</p>
+    <p class="h">今日いちばん大事なこと</p>
+    <p class="b">11:00のタクシーで出る</p>
+    <p class="s">白子駅までは約20分。<strong>前夜のうちにフロントで11:00に頼んでおいてください。</strong>この時間に鈴鹿サーキットを出るバスは無いので、タクシーが唯一の足です。GOも鈴鹿の対応エリアなので保険になります。<br>
+    ここから先は 11:36 → 12:49 → 15:25 と3本つながっているので、最初の1本を落とさないことがすべてです。</p>
   </div>
   <ul class="tl">
     <li>
@@ -529,7 +524,7 @@ h2 .day-date{
       <span class="time">12:49</span>
       <div class="body">
         <p class="what"><span class="chip move">いどう</span>ミュースカイでセントレアへ（→13:17着）</p>
-        <p class="memo">帰りはここだけミュースカイを使う。12:30発の特急なら乗車券980円で済むが、近鉄名古屋12:17着からの乗り換えが8分しかなく、名鉄名古屋は途中駅なので一般車で4人並んで座れる保証もない。荷物を持った最後の移動なので、450円は座席に払う。</p>
+        <p class="memo">帰りはここだけミュースカイ。名鉄名古屋は途中駅で座席が読めないうえ、荷物を持った最後の移動なので、450円は座席に払う。</p>
       </div>
     </li>
     <li>
@@ -562,13 +557,16 @@ h2 .day-date{
   <hr class="rule">
   <ul class="check" id="todo">
     <li><input type="checkbox" id="t1"><label for="t1">航空引換証をダウンロードする<span class="why">スカイパックツアーズの My Page から。電波の悪いところで焦らないよう、家で落として端末に保存しておく。</span></label></li>
-    <li><input type="checkbox" id="t6"><label for="t6">ミューチケットを復路ぶんだけ買う<span class="why">9/15 名鉄名古屋12:49発のミュースカイ。往路は特急の一般車を使うので不要。</span></label></li>
     <li><input type="checkbox" id="t7"><label for="t7">近鉄特急券を往復ぶん買う（ビスタカー階下）<span class="why">9/14 近鉄名古屋08:50発 五十鈴川行と、9/15 白子11:36発 名古屋行。どちらも階下のグループ席。</span></label></li>
+    <li><input type="checkbox" id="t6"><label for="t6">ミューチケットを復路ぶんだけ買う<span class="why">9/15 名鉄名古屋12:49発のミュースカイ。往路は特急の一般車を使うので不要。</span></label></li>
     <li><input type="checkbox" id="t3"><label for="t3">パークのパスポートをWEBで買っておく<span class="why">当日窓口より500円安い（1人あたり）。4人ぶんで2,000円の差。</span></label></li>
-    <li><input type="checkbox" id="t9"><label for="t9">9/14の夜、9/15朝11:00のタクシーをフロントで予約<span class="why">その時間に鈴鹿サーキットを出るバスが無いので、これを忘れると11:36の特急に届かない。</span></label></li>
-    <li><input type="checkbox" id="t10"><label for="t10">9/13の夜、翌朝ぶんの朝ごはんを買っておく<span class="why">6:30に部屋で食べる前提。ホテルの朝食は7:00からで間に合わない。</span></label></li>
-    <li><input type="checkbox" id="t8"><label for="t8">GOアプリを入れて支払い設定まで済ませる<span class="why">使うのは鈴鹿側。白子駅と鈴鹿サーキットは対応エリアで、タクシーが捕まらないときの保険になる。名古屋駅では乗り場に並ぶほうが速い。</span></label></li>
+    <li><input type="checkbox" id="t8"><label for="t8">GOアプリを入れて支払い設定まで済ませる<span class="why">使うのは鈴鹿側。白子駅と鈴鹿サーキットは対応エリアで、タクシーが捕まらないときの保険になる。</span></label></li>
     <li><input type="checkbox" id="t5"><label for="t5">鈴鹿サーキットホテルにキッズルームの内容とチェックイン時刻を確認</label></li>
+  </ul>
+  <p class="sub-h">現地でやること</p>
+  <ul class="check" id="onsite">
+    <li><input type="checkbox" id="o1"><label for="o1">9/13の夜 — 翌朝ぶんの朝ごはんを買う<span class="why">6:30に部屋で食べる前提。</span></label></li>
+    <li><input type="checkbox" id="o2"><label for="o2">9/14の夜 — 翌朝11:00のタクシーをフロントで予約<span class="why">その時間に鈴鹿サーキットを出るバスが無いので、これが唯一の足になる。</span></label></li>
   </ul>
 </section>
 
@@ -608,10 +606,10 @@ h2 .day-date{
   <div class="tablewrap">
   <table class="money">
     <tr><th>区間</th><th>金額</th></tr>
-    <tr><td>名鉄 特急の一般車（セントレア→名鉄名古屋）<br><span style="color:var(--ink-3);font-size:.82rem">乗車券のみ・座席指定なし</span></td><td>980円</td></tr>
-    <tr><td>ミュースカイ（名鉄名古屋→セントレア）<br><span style="color:var(--ink-3);font-size:.82rem">乗車券980円＋特別車両券450円</span></td><td>1,430円</td></tr>
-    <tr><td>近鉄特急（白子⇄近鉄名古屋）<br><span style="color:var(--ink-3);font-size:.82rem">運賃1,000円＋特急料金920円</span></td><td>1,920円</td></tr>
-    <tr><td>三重交通バス（白子駅→鈴鹿サーキット）<br><span style="color:var(--ink-3);font-size:.82rem">小児は250円</span></td><td>500円</td></tr>
+    <tr><td>名鉄 特急の一般車（セントレア→名鉄名古屋）<br><span class="fine">乗車券のみ・座席指定なし</span></td><td>980円</td></tr>
+    <tr><td>ミュースカイ（名鉄名古屋→セントレア）<br><span class="fine">乗車券980円＋特別車両券450円</span></td><td>1,430円</td></tr>
+    <tr><td>近鉄特急（白子⇄近鉄名古屋）<br><span class="fine">運賃1,000円＋特急料金920円</span></td><td>1,920円</td></tr>
+    <tr><td>三重交通バス（白子駅→鈴鹿サーキット）<br><span class="fine">小児は250円</span></td><td>500円</td></tr>
   </table>
   </div>
   <p class="sec-note" style="margin-top:.7rem">名鉄の特別車両券（ミューチケット）は年齢を問わず1人450円。往路で特急の一般車を選ぶと、4人ぶんで1,800円が浮きます。</p>
@@ -651,12 +649,12 @@ h2 .day-date{
 
 <footer class="foot">
   <p>飛行機・ホテルの情報はスカイパックツアーズの予約画面から。列車とバスの時刻・運賃は2026年9月12日に確認したもので、出典は
-  <a href="https://ekitan.com/" target="_blank" rel="noopener">駅探</a>（名鉄ミュースカイ・近鉄名古屋線）、
-  <a href="https://transit.yahoo.co.jp/" target="_blank" rel="noopener">Yahoo!路線情報</a>（白子→近鉄名古屋の9/15検索）、
+  <a href="https://ekitan.com/" target="_blank" rel="noopener">駅探</a>（名鉄・近鉄の駅時刻表）、
+  <a href="https://transit.yahoo.co.jp/" target="_blank" rel="noopener">Yahoo!路線情報</a>（9/13と9/15の経路検索）、
   <a href="https://www.sanco.co.jp/" target="_blank" rel="noopener">三重交通</a>（白子サーキット線・平日ダイヤ）。入場料と開館時間は
   <a href="https://www.tcmit.org/visit/admission" target="_blank" rel="noopener">トヨタ産業技術記念館</a>と
   <a href="https://www.suzukacircuit.jp/park/fee/" target="_blank" rel="noopener">鈴鹿サーキットパーク</a>の公式サイトから。</p>
-  <p>バスの「シ」印の便（白子9:25発、鈴鹿サーキット11:50発・14:10発）は春休みと夏休みの期間だけの運行で、今回の日程では走りません。どの列車がビスタカーで運転されるかは近鉄の予約画面で確認してください。</p>
+  <p>どの列車がビスタカーで運転されるかは、近鉄の予約画面で確認してください。</p>
 </footer>
 
 </div>

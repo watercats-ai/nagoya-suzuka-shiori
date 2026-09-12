@@ -35,6 +35,10 @@ const favicon =
   );
 
 const html = `<!doctype html>
+<!--
+  このファイルは build.mjs の出力です。直接編集しないでください。
+  本文とスタイルの編集は 栞.html 側で行い、\`node build.mjs\` で書き出します。
+-->
 <html lang="ja">
 <head>
 <meta charset="utf-8">
